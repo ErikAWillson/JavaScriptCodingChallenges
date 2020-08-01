@@ -34,9 +34,9 @@ console.log(output === true);
 function canBalance(nums) {
     const total = nums.reduce((a, b) => a + b, 0);
 
-    let sum = 0;
+    var sum = 0;
     var canItBalance = false;
-    nums.forEach((value, index, self) => {
+    nums.forEach(value => {
         sum += value;
         if ((total / sum == 2) && (total % sum == 0)) {
             canItBalance = true;
